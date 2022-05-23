@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+}
+
+.myform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myinput {
+    width: 40%;
+    margin: 8px;
+    padding: 4px;
+    /* border: 2px red solid; */
+    border-radius: 13px;
+    outline: none;
+}
+
+.container {
+    min-height: 90vh;
+    background: center/cover no-repeat url("/static/bg3.jpg");
+}
+
+.btn {
+    padding: 4px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}

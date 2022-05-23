@@ -1,0 +1,63 @@
+
+@import 'reset'
+@import 'mixins'
+@import 'form'
+@import 'toggle'
+@import 'slider'
+
+:root
+  --main-color: #f6f6f6
+  --dark-color: #e8eaeb
+  --font-size: 20px
+  --line-height: 35px
+  --dark-font-color: #555656
+  --border-radius-size: 20px
+
+body
+  color: var(--dark-font-color)
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-size: var(--font-size)
+  line-height: var(--line-height)
+  font-smoothing: antialiased
+  letter-spacing: .075em
+  background-color: var(--main-color)
+
+  +mobile()
+    color: red !important
+
+  +tablet()
+    color: green !important
+
+  +desktop()
+    color: blue !important
+
+.container
+  margin: 0 auto
+  max-width: 112.0rem
+  position: relative
+  width: 90%
+
+// grids
+.row
+  display: flex
+
+  .column
+    flex: 1
+    padding: 1%
+
+.hide
+    clip: rect(0 0 0 0)
+    height: 1px
+    margin: -1px
+    padding: 0
+    position: absolute
+    width: 1px
+
+h1
+  font-size: calc(--font-size * 1.2)
+  font-weight: 600
+  line-height: 1.5em
+
+p
+  font-size: 14px
+  line-height: 1.75em

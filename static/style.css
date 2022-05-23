@@ -1,0 +1,132 @@
+    @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Smooch&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    #navbar {
+        background-color: rgb(221, 50, 50);
+        padding: 13px 14px;
+    }
+    
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+    }
+    
+    #navbar li {
+        list-style: none;
+    }
+    
+    #navbar li a {
+        text-decoration: none;
+        padding: 7px 30px;
+        font-family: 'Smooch', cursive;
+        color: whitesmoke;
+        font-size: 24px;
+    }
+    
+    #logo {
+        color: white;
+        display: flex;
+        align-items: center;
+        margin-right: 14px;
+    }
+    
+    #logo img {
+        height: 33px;
+    }
+    
+    #navbar li a:hover {
+        color: black;
+    }
+    
+    #introSection {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        font-size: 35px;
+        background-color: red;
+        background: center / cover no-repeat url("/static/bg4.jpg")
+    }
+    
+    #sponsorSection {
+        padding-top: 3px;
+        height: 300px;
+        background-color: rgb(214, 152, 152);
+        color: yellow;
+    }
+    
+    #sponsorSection h2 {
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    #missonSection {
+        text-align: center;
+        height: 238px;
+    }
+    
+    .card-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .card-img {
+        height: 100px;
+        padding-left: 18px;
+        padding-top: 10px;
+    }
+    
+    .card-img img {
+        height: inherit;
+    }
+    
+    .card-content {
+        padding-right: 44px;
+        font-size: 22px;
+        padding-top: 14px;
+        font-family: 'Caveat', cursive;
+        font-weight: bold;
+    }
+    
+    .card {
+        display: inline-block;
+        width: 28%;
+        height: 200px;
+        border: 2px solid red;
+        border-radius: 15px;
+        margin: 6px;
+        padding: 3px 4px;
+    }
+    
+    #sponsors {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .spImage {
+        height: 159px;
+        margin: 64px;
+        padding: 18px;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    
+    #footer {
+        text-align: center;
+        height: 50px;
+        background-color: rgb(8, 8, 7);
+        color: white;
+    }

@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Epic dance academy
+    block scripts
+    block style 
+  body
+    nav#navbar
+      ul 
+        div#logo 
+            img(src="/static/logo.png", alt="img")
+            | DA
+        li #[a(href='/') Home]
+        li #[a(href='/about') About Us ]
+        li #[a(href='/faq') FAQS]
+        li #[a(href='/') class Info ]
+        li #[a(href='/contact') contact us]  
+    block content
+
+    footer#footer
+      | copyright © 2022 EpicDanceAcademy.com | All rights reserved 
+  

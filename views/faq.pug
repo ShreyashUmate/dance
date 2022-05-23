@@ -1,0 +1,41 @@
+extends bfaq.pug 
+block scripts 
+    script(src="/static/faq.js") 
+block style 
+    style
+      include ../static/aboutstyle.css
+      include ../static/style.css
+      include ../static/faqstyle.css
+block content 
+    div.faqcontent
+
+        div.faq-info
+            h1 |FAQs for classes
+        div.mainbox
+            div.box1
+                p#p1 | pune is such an expensive city to live in! And is it safe?
+                button(id="btn" onclick="hide()")
+                    | 	&#x2B 
+                button(id="btn2" onclick="show()")
+                    | 	 &#x2212
+            div.par
+                p#para | Like all metropolitan cities, the cost of living in Mumbai is high. However, we can provide a list of affordable pg accommodation/flatsharing in the camp area (not too far from the Institute) where many of our students have stayed.pune is considered India’s safest for women!
+        div.mainbox2
+            div.box2
+                p#p1 | Your fees are higher than many other academies in the country; why is this?
+                button(id="btn3" onclick="hide2()")
+                    | 	&#x2B 
+                button(id="btn4" onclick="show2()")
+                    | 	 &#x2212
+            div.par2
+                p#para2 We focus on providing the best quality training to those who intend to take dance up     professionally. Our facilities are constantly maintained to ensure the health and well-being of the students. We have air-conditioned studios,  proper sprung wooden floors (that are instrumental in minimizing impact and preventing injury).We also provide the best instructors to teach you. They have all been hand-picked and personally trained by Master Terence himself. We also  invest in each instructor’s personal growth, giving them scholarships and workshops to ensure that their dance and teaching skills are up-to-date. All our faculty have received international training and many have received multiple awards or full scholarships at prestigious dance schools and workshops. See the Faculty page for more information .
+        div.mainbox3
+            div.box3
+                p#p1 |Am I required to have previous dance training to join?
+                button(id="btn5" onclick="hide3()")
+                    | 	&#x2B 
+                button(id="btn6" onclick="show3()")
+                    | 	 &#x2212
+            div.par3
+                p#para3 We focus on providing the best quality training to those who intend to take dance up     professionally. Our facilities are constantly maintained to ensure the health and well-being of the students. We have air-conditioned studios,  proper sprung wooden floors (that are instrumental in minimizing impact and preventing injury).We also provide the best instructors to teach you. They have all been hand-picked and personally trained by Master Terence himself. We also  invest in each instructor’s personal growth, giving them scholarships and workshops to ensure that their dance and teaching skills are up-to-date. All our faculty have received international training and many have received multiple awards or full scholarships at prestigious dance schools and workshops. See the Faculty page for more information .
+                

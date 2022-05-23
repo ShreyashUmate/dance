@@ -1,0 +1,55 @@
+
+doctype html
+html
+  head
+    title Epic dance academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul 
+        div#logo 
+            img(src="/static/logo.png", alt="img")
+            | DA
+        li #[a(href='/') Home]
+        li #[a(href='/') about ]
+        li #[a(href='/') services]
+        li #[a(href='/') class Info ]
+        li #[a(href='/') contact us]
+
+    section#introSection 
+      div Welcome to  Epic's dance academy
+      div Eat Dance Sleep Repeat
+    section#missonSection 
+      h2 Our mission 
+      div.card
+        h3 Dance perfection
+        div.card-box
+          div.card-img 
+            img(src="/static/pic1.png", alt="pic1")
+          div.card-content
+            p This is best dance academy 
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img 
+            img(src="/static/pic2.png", alt="pic1")
+          div.card-content
+            p This is best dance academy 
+      div.card
+        h3 Expert Teaching 
+        div.card-box
+          div.card-img 
+            img(src="/static/pic3.png", alt="pic1")
+          div.card-content
+            p This is best dance academy 
+    section#sponsorSection 
+      h2 Our sponsors
+      div#sponsors
+        img(src="/static/sp1.png", alt="sp1" , class="spImage")
+        img(src="/static/sp2.png", alt="sp2" , class="spImage")
+        img(src="/static/sp3.png", alt="sp3" , class="spImage")
+    footer#footer
+      | copyright © 2022 EpicDanceAcademy.com | All rights reserved
+    script
+      include ../static/index.js

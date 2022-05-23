@@ -1,0 +1,55 @@
+
+
+// media queries
+mobile()
+  @media (max-width: 640px)
+    {block}
+
+tablet()
+  @media (max-width: 800px)
+    {block}
+
+desktop()
+  @media (max-width: 1200px)
+    {block}
+
+border-radius()
+    -webkit-border-radius: arguments
+    -moz-border-radius: arguments
+    border-radius: arguments
+
+user-select()
+    -webkit-user-select: arguments
+    -moz-user-select: arguments
+    -ms-user-select: arguments
+    user-select: arguments
+
+transition()
+    -webkit-transition: arguments
+    transition: arguments
+
+// font-smoothing: antialiased
+font-smoothing() {
+    if current-property {
+      -webkit-{current-property}: arguments
+      if arguments == antialiased {
+        -moz-osx-{current-property}: grayscale
+      } else if arguments == subpixel-antialiased {
+        -moz-osx-{current-property}: auto
+      }
+      {current-property}: arguments
+    } else {
+      error('font-smoothing() must be used within a property');
+    }
+}
+
+//background: gradient(top, #FFFFFF, #000000, 50%);
+gradient() {
+  if current-property {
+    // the fallback for IE
+    add-property(current-property[0], mix(arguments[1], arguments[2], arguments[3]?arguments[3]:50%));
+    linear-gradient(arguments[0], arguments[1], arguments[2]);
+  } else {
+    error('gradient() must be used within a property');
+  }
+}
